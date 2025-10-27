@@ -179,13 +179,14 @@ footer {
 .team-card img {
     width: 500px;
     height: 500px;
-    object-fit: cover;
-    border-radius: 50%;
+    object-fit: contain;  /* changed from cover to contain to prevent cropping */
+    border-radius: 16px;  /* changed from 50% to a subtle rounded corner */
     margin: 1rem auto 2rem;
     display: block;
     border: 6px solid var(--primary-color);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--light-gray);  /* added background for contain mode */
 }
 
 .team-card img:hover {
