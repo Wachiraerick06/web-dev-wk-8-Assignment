@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - EcoLife Essentials</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>EcoLife Essentials</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-header">
+            <h2>Our Eco-Friendly Products</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="Sustainable Home Goods">Home Goods</button>
+                <button class="filter-btn" data-category="Reusable Items">Reusable Items</button>
+                <button class="filter-btn" data-category="Organic Products">Organic</button>
+                <button class="filter-btn" data-category="Bamboo Products">Bamboo</button>
+                <button class="filter-btn" data-category="Solar-Powered Gadgets">Solar Gadgets</button>
+            </div>
+        </section>
+
+        <section class="products-grid">
+            <!-- Products will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EcoLife Essentials</h3>
+                <p>Making sustainable living accessible to everyone.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@ecolife.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EcoLife Essentials. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
