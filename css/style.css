@@ -157,22 +157,55 @@ footer {
     animation: fadeIn 0.8s ease forwards;
 }
 
-/* Product and team image sizing */
-.product-card img,
-.team-card img {
-    width: 100%;        /* fill card width */
-    height: auto;       /* preserve aspect ratio */
-    max-height: 220px;  /* prevent very tall images */
-    object-fit: cover;  /* crop to fit without distortion */
-    display: block;
-    border-radius: 6px;
+/* Team section specific styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
 }
 
-@media (max-width: 600px) {
-    .product-card img,
-    .team-card img {
-        max-height: 160px;
-    }
+.team-card {
+    text-align: center;
+    background: var(--background-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.team-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2rem auto;
+    display: block;
+    border: 4px solid var(--primary-color);
+}
+
+.team-card h3 {
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.team-card .role {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .bio {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--text-color);
+}
+
+/* Product image sizing */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px 8px 0 0;
 }
 
 /* Broader image constraints to catch images inserted in different containers */
