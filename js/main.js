@@ -5,7 +5,7 @@ const products = [
         name: 'Bamboo Utensil Set',
         category: 'Sustainable Home Goods',
         price: 24.99,
-        image: 'images/bamboo-utensils.jpg',
+        image: '/web-dev-wk-8-Assignment/images/bamboo-utensils.jpg',
         description: 'Complete set of eco-friendly bamboo utensils for sustainable dining.'
     },
     {
@@ -13,7 +13,7 @@ const products = [
         name: 'Reusable Shopping Bag Set',
         category: 'Reusable Items',
         price: 19.99,
-        image: 'images/shopping-bags.jpg',
+        image: '/web-dev-wk-8-Assignment/images/shopping-bags.jpg',
         description: 'Set of 5 durable, washable shopping bags made from recycled materials.'
     },
     {
@@ -21,7 +21,7 @@ const products = [
         name: 'Solar-Powered LED Lantern',
         category: 'Solar-Powered Gadgets',
         price: 34.99,
-        image: 'images/solar-lantern.jpg',
+        image: '/web-dev-wk-8-Assignment/images/solar-lantern.jpg',
         description: 'Portable LED lantern powered by solar energy, perfect for outdoor activities.'
     },
     {
@@ -29,7 +29,7 @@ const products = [
         name: 'Bamboo Toothbrush Set',
         category: 'Bamboo Products',
         price: 12.99,
-        image: 'images/bamboo-toothbrush.jpg',
+        image: '/web-dev-wk-8-Assignment/images/bamboo-toothbrush.jpg',
         description: 'Pack of 4 biodegradable bamboo toothbrushes with charcoal-infused bristles.'
     },
     {
@@ -37,7 +37,7 @@ const products = [
         name: 'Organic Skincare Kit',
         category: 'Organic Products',
         price: 49.99,
-        image: 'images/skincare-kit.jpg',
+        image: '/web-dev-wk-8-Assignment/images/skincare-kit.jpg',
         description: 'Complete organic skincare set with cleanser, toner, and moisturizer.'
     },
     {
@@ -45,7 +45,7 @@ const products = [
         name: 'Glass Food Container Set',
         category: 'Sustainable Home Goods',
         price: 39.99,
-        image: 'images/glass-containers.jpg',
+        image: '/web-dev-wk-8-Assignment/images/glass-containers.jpg',
         description: 'Set of 5 glass food containers with bamboo lids for plastic-free food storage.'
     },
     {

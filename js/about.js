@@ -2,21 +2,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const teamMembers = [
         {
-            name: 'Sarah Green',
+            name: 'Wachira Erick',
             role: 'Founder & CEO',
-            image: 'images/team-1.jpg',
+            image: '/web-dev-wk-8-Assignment/images/team-1.jpg',
             bio: 'Environmental activist and entrepreneur with 10+ years in sustainable business.'
         },
         {
-            name: 'Mike Rivers',
+            name: 'Sarah Green',
             role: 'Product Development',
-            image: 'images/team-2.jpg',
+            image: '/web-dev-wk-8-Assignment/images/team-2.jpg',
             bio: 'Expert in sustainable materials and eco-friendly manufacturing processes.'
         },
         {
-            name: 'Lisa Chen',
+            name: 'Lisa Kendra',
             role: 'Sustainability Director',
-            image: 'images/team-3.jpg',
+            image: '/web-dev-wk-8-Assignment/images/team-3.jpg',
             bio: 'Environmental scientist specializing in carbon footprint reduction.'
         }
     ];
