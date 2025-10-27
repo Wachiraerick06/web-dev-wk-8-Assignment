@@ -156,3 +156,21 @@ footer {
 .animate-fade-in {
     animation: fadeIn 0.8s ease forwards;
 }
+
+/* Product and team image sizing */
+.product-card img,
+.team-card img {
+    width: 100%;        /* fill card width */
+    height: auto;       /* preserve aspect ratio */
+    max-height: 220px;  /* prevent very tall images */
+    object-fit: cover;  /* crop to fit without distortion */
+    display: block;
+    border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+    .product-card img,
+    .team-card img {
+        max-height: 160px;
+    }
+}
