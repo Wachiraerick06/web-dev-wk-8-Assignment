@@ -28,11 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const fallbackImage = 'https://via.placeholder.com/200x200?text=' + encodeURIComponent(member.name);
             return `
                 <div class="team-card animate-fade-in">
-                    <img 
-                        src="${member.image}" 
-                        alt="${member.name}" 
-                        onerror="this.src='${fallbackImage}'"
-                    >
+                    <div class="img-wrapper">
+                        <img 
+                            src="${member.image}" 
+                            alt="${member.name}" 
+                            onerror="this.src='${fallbackImage}'"
+                        >
+                    </div>
                     <div class="team-info">
                         <h3>${member.name}</h3>
                         <p class="role">${member.role}</p>
