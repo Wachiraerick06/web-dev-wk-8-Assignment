@@ -180,30 +180,22 @@ footer {
     width: 500px;
     height: 500px;
     margin: 1rem auto 2rem;
-    display: flex;          /* Use flexbox for centering */
-    align-items: center;    /* Center vertically */
-    justify-content: center;/* Center horizontally */
     border-radius: 16px;
     border: 6px solid var(--primary-color);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     overflow: hidden;
-    background-color: var(--light-gray);
 }
 
 .team-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;  /* Try scale-down instead of contain */
-    object-position: center;  /* Ensure center positioning */
-    padding: 0;              /* Remove any padding */
-    margin: 0;              /* Remove any margin */
+    width: 500px;           /* Set exact width */
+    height: 500px;          /* Set exact height */
+    object-fit: fill;       /* Fill the entire space */
     display: block;         /* Ensure block display */
-    max-width: 100%;        /* Ensure image doesn't overflow */
-    max-height: 100%;       /* Ensure image doesn't overflow */
+    margin: 0 auto;         /* Center horizontally */
 }
 
 .team-card img:hover {
-    transform: scale(1.05);  /* Slight scale on hover */
+    transform: scale(1.02);  /* Subtle hover effect */
 }
 
 .team-card h3 {
@@ -270,11 +262,9 @@ footer {
     border-radius: 8px 8px 0 0;
 }
 
-/* Broader image constraints to catch images inserted in different containers */
+/* Broader image constraints for product images only */
 .products-grid img,
 .product-grid img,
-.team-grid img,
-.about .team-card img,
 .product-modal img {
     width: 100%;
     height: auto;
@@ -286,7 +276,6 @@ footer {
 @media (max-width: 600px) {
     .products-grid img,
     .product-grid img,
-    .team-grid img,
     .product-modal img {
         max-height: 180px;
     }
