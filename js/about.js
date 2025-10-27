@@ -4,19 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'Wachira Erick',
             role: 'Founder & CEO',
-            image: '/web-dev-wk-8-Assignment/images/team-1.jpg',
+            image: 'web-dev-wk-8-Assignment/images/team-1.jpg',
             bio: 'Environmental activist and entrepreneur with 10+ years in sustainable business.'
         },
         {
             name: 'Sarah Green',
             role: 'Product Development',
-            image: '/web-dev-wk-8-Assignment/images/team-2.jpg',
+            image: 'web-dev-wk-8-Assignment/images/team-2.jpg',
             bio: 'Expert in sustainable materials and eco-friendly manufacturing processes.'
         },
         {
             name: 'Lisa Kendra',
             role: 'Sustainability Director',
-            image: '/web-dev-wk-8-Assignment/images/team-3.jpg',
+            image: 'web-dev-wk-8-Assignment/images/team-3.jpg',
             bio: 'Environmental scientist specializing in carbon footprint reduction.'
         }
     ];
