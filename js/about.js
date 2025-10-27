@@ -4,19 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'Wachira Erick',
             role: 'Founder & CEO',
-            image: 'web-dev-wk-8-Assignment/images/team-1.jpg',
+            image: 'images/team-1.jpg',
             bio: 'Environmental activist and entrepreneur with 10+ years in sustainable business.'
         },
         {
             name: 'Sarah Green',
             role: 'Product Development',
-            image: 'web-dev-wk-8-Assignment/images/team-2.jpg',
+            image: 'images/team-2.jpg',
             bio: 'Expert in sustainable materials and eco-friendly manufacturing processes.'
         },
         {
             name: 'Lisa Kendra',
             role: 'Sustainability Director',
-            image: 'web-dev-wk-8-Assignment/images/team-3.jpg',
+            image: 'images/team-3.jpg',
             bio: 'Environmental scientist specializing in carbon footprint reduction.'
         }
     ];
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const fallbackImage = 'https://via.placeholder.com/200x200?text=' + encodeURIComponent(member.name);
             return `
                 <div class="team-card animate-fade-in">
-                    <img src="${fallbackImage}" alt="${member.name}" onerror="this.src='${fallbackImage}'">
+                    <img src="${member.image}" alt="${member.name}" onerror="this.src='${fallbackImage}'">
                     <h3>${member.name}</h3>
                     <p class="role">${member.role}</p>
                     <p class="bio">${member.bio}</p>
