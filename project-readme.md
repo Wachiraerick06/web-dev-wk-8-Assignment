@@ -53,7 +53,7 @@ This site is deployed using GitHub Pages. To deploy your own version:
 3. Set the source to the main branch
 4. Save the changes
 
-The site will be available at `https://[your-username].github.io/web-dev-wk-8-Assignment/`
+The site will be available at `https://[wachiraerick06].github.io/web-dev-wk-8-Assignment/`
 
 ## Technologies Used
 
