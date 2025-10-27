@@ -24,14 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load team members
     const teamGrid = document.querySelector('.team-grid');
     if (teamGrid) {
-        teamGrid.innerHTML = teamMembers.map(member => `
-            <div class="team-card animate-fade-in">
-                <img src="${member.image}" alt="${member.name}">
-                <h3>${member.name}</h3>
-                <p class="role">${member.role}</p>
-                <p class="bio">${member.bio}</p>
-            </div>
-        `).join('');
+        teamGrid.innerHTML = teamMembers.map(member => {
+            const fallbackImage = 'https://via.placeholder.com/200x200?text=' + encodeURIComponent(member.name);
+            return `
+                <div class="team-card animate-fade-in">
+                    <img src="${fallbackImage}" alt="${member.name}" onerror="this.src='${fallbackImage}'">
+                    <h3>${member.name}</h3>
+                    <p class="role">${member.role}</p>
+                    <p class="bio">${member.bio}</p>
+                </div>
+            `;
+        }).join('');
     }
 
     // Animate impact stats when they come into view

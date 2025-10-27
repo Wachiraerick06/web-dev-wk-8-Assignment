@@ -77,9 +77,10 @@ const ecoTips = [
 
 // Function to create product cards
 function createProductCard(product) {
+    const fallbackImage = 'https://via.placeholder.com/300x200?text=' + encodeURIComponent(product.name);
     return `
         <div class="product-card animate-fade-in">
-            <img src="${product.image}" alt="${product.name}">
+            <img src="${fallbackImage}" alt="${product.name}" onerror="this.src='${fallbackImage}'">
             <h3>${product.name}</h3>
             <p class="category">${product.category}</p>
             <p class="price">$${product.price}</p>
