@@ -114,11 +114,25 @@ body {
 }
 
 .product-card img {
+    /* fallback: keep images block-level if used outside wrapper */
     width: 100%;
-    height: 200px;
-    object-fit: cover;
     display: block;
     border-radius: 8px 8px 0 0;
+}
+
+/* Aspect-ratio wrapper for product images so they fit responsively */
+.product-image {
+    width: 100%;
+    aspect-ratio: 16 / 10; /* slightly wider ratio for better product display */
+    overflow: hidden;
+    background: var(--light-gray);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .product-card h3 {
@@ -351,7 +365,7 @@ footer {
 .product-modal img {
     width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
@@ -374,5 +388,16 @@ footer {
     
     .product-card .description {
         font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .products-grid img,
+    .product-grid img {
+        max-height: 320px;
+    }
+
+    .product-modal img {
+        max-height: 500px;
     }
 }
