@@ -180,7 +180,9 @@ footer {
     width: 500px;
     height: 500px;
     margin: 1rem auto 2rem;
-    position: relative;
+    display: flex;          /* Use flexbox for centering */
+    align-items: center;    /* Center vertically */
+    justify-content: center;/* Center horizontally */
     border-radius: 16px;
     border: 6px solid var(--primary-color);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -189,19 +191,19 @@ footer {
 }
 
 .team-card img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+    object-fit: scale-down;  /* Try scale-down instead of contain */
+    object-position: center;  /* Ensure center positioning */
+    padding: 0;              /* Remove any padding */
+    margin: 0;              /* Remove any margin */
+    display: block;         /* Ensure block display */
+    max-width: 100%;        /* Ensure image doesn't overflow */
+    max-height: 100%;       /* Ensure image doesn't overflow */
 }
 
 .team-card img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transform: scale(1.05);  /* Slight scale on hover */
 }
 
 .team-card h3 {
